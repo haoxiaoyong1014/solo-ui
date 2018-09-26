@@ -1,0 +1,108 @@
+[INFO ]-[2018-09-21 09:27:15]-[org.b3log.solo.SoloServletListener:211]: Please open browser and visit [http://localhost:8080] to init your Solo, and then enjoy it :-p
+[INFO ]-[2018-09-21 09:27:15]-[org.b3log.solo.SoloServletListener:130]: Solo is running [http://localhost:8080]
+[INFO ]-[2018-09-21 09:28:19]-[org.b3log.solo.service.InitService:203]: Your DATA will be stored in directory [jdbc:h2:/Users/haoxiaoyong/solo_h2/db], please pay more attention on it!
+[INFO ]-[2018-09-21 09:28:54]-[org.b3log.solo.util.Markdowns:137]: [marked] is not available, uses built-in [flexmark] for markdown processing. Please read FAQ section in user guide (https://hacpai.com/article/1492881378588) for more details.
+[WARN ]-[2018-09-21 09:39:35]-[org.b3log.solo.plugin.list.ListHandler:62]: ToC hit twice, please report this "ghosty" issue to developer team: https://github.com/b3log/solo/issues/new
+[WARN ]-[2018-09-21 09:52:41]-[org.b3log.solo.plugin.list.ListHandler:62]: ToC hit twice, please report this "ghosty" issue to developer team: https://github.com/b3log/solo/issues/new
+[WARN ]-[2018-09-21 10:01:22]-[org.b3log.solo.plugin.list.ListHandler:62]: ToC hit twice, please report this "ghosty" issue to developer team: https://github.com/b3log/solo/issues/new
+[WARN ]-[2018-09-21 10:02:25]-[org.b3log.solo.plugin.list.ListHandler:62]: ToC hit twice, please report this "ghosty" issue to developer team: https://github.com/b3log/solo/issues/new
+[WARN ]-[2018-09-21 10:06:24]-[org.b3log.solo.plugin.list.ListHandler:62]: ToC hit twice, please report this "ghosty" issue to developer team: https://github.com/b3log/solo/issues/new
+[INFO ]-[2018-09-21 10:25:35]-[org.b3log.solo.SoloServletListener:140]: Destroyed the context
+[INFO ]-[2018-09-21 10:25:46]-[org.b3log.solo.SoloServletListener:130]: Solo is running [http://116.62.187.190:8080]
+[INFO ]-[2018-09-21 10:27:07]-[org.b3log.solo.SoloServletListener:140]: Destroyed the context
+[INFO ]-[2018-09-21 10:27:31]-[org.b3log.solo.SoloServletListener:130]: Solo is running [http://116.62.187.190:8081]
+[ERROR]-[2018-09-21 10:27:50]-[org.b3log.latke.cron.Cron:123]: Scheduled task execute failed [http://116.62.187.190:8081/console/stat/onlineVisitorRefresh, timeout=120000]
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at org.b3log.latke.cron.Cron.run(Cron.java:116)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+[ERROR]-[2018-09-21 10:27:55]-[org.b3log.latke.cron.Cron:123]: Scheduled task execute failed [http://116.62.187.190:8081/blog/symphony/user, timeout=120000]
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at org.b3log.latke.cron.Cron.run(Cron.java:116)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+[INFO ]-[2018-09-21 10:32:39]-[org.b3log.solo.SoloServletListener:140]: Destroyed the context
+[INFO ]-[2018-09-21 10:33:11]-[org.b3log.solo.SoloServletListener:130]: Solo is running [http://116.62.187.190:8083]
+[ERROR]-[2018-09-21 10:33:30]-[org.b3log.latke.cron.Cron:123]: Scheduled task execute failed [http://116.62.187.190:8083/console/stat/onlineVisitorRefresh, timeout=120000]
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at org.b3log.latke.cron.Cron.run(Cron.java:116)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+[ERROR]-[2018-09-21 10:33:35]-[org.b3log.latke.cron.Cron:123]: Scheduled task execute failed [http://116.62.187.190:8083/blog/symphony/user, timeout=120000]
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1564)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at org.b3log.latke.cron.Cron.run(Cron.java:116)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+[INFO ]-[2018-09-21 10:34:01]-[org.b3log.solo.SoloServletListener:140]: Destroyed the context
